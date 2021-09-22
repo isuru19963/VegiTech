@@ -1,13 +1,15 @@
-## LaraClassified - Classified Ads Web Application
+## Building from the source
 
-LaraClassified is a Classified CMS, a powerfull modulable app and has a fully responsive design. Built with Laravel and Bootstrap. It is packed with lots of features.
+If you want to build the project from the source code.
 
-
-## Installation & Update Documentation
-
-The documentation is located in the folder: documentation/
-
-
-## License
-
-This software is furnished under a license and may be used and copied only in accordance with the terms of such license and with the inclusion of the above copyright notice. If you Purchased from CodeCanyon, Please read the full License from here : http://codecanyon.net/licenses/standard
+1. Install Composer Dependencies
+``composer install``
+1. Install NPM Dependencies
+``npm install``
+1. Create a copy of your .env file
+``copy .env.example .env``
+1. Generate an app encryption key
+``php artisan key:generate``
+1. Create an empty database for application
+1. Run
+``php artisan migrate``
